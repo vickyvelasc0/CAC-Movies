@@ -110,11 +110,6 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-.tituloSeccion{
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 40px;
-}
 #buscadorPeliculas{
     display: flex;
     justify-content: center;
@@ -146,7 +141,7 @@ header{
 }
 hr{
     border: 1px solid #9f3647;
-    margin: 0 auto;
+    width: 70%;
 }
 #tendencias{
     display: flex;
@@ -258,7 +253,6 @@ h4 {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 .peliculasAclamadas{
-    margin: 0 auto;
     background: rgb(23, 23, 23);
 }
 .tituloSection{
@@ -273,7 +267,6 @@ h4 {
     display: flex;
     justify-content: flex-start;
     padding: 0 0 10vh 0;
-    margin-bottom: 100px;
     background: rgb(23, 23, 23);
 }
 .peliculaItem{
@@ -294,12 +287,10 @@ h4 {
     vertical-align: top;
 }
 .footer{
-    position: fixed;
 	bottom: 0;
 	width: 100%;
     background-color:#9f3647;
     color:#ffffff;
-
 }
 .listaNav{
     list-style: none;
