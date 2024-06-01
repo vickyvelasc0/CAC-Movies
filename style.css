@@ -1,68 +1,9 @@
-hr{
-    border: 1px solid #9f3647;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 40px;
-}
-
-@font-face{
-    font-family:"FontAwesome";
-    font-display:block;
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot);
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot?#iefix) format("embedded-opentype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff2) format("woff2"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff) format("woff"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.ttf) format("truetype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.svg#fontawesome) format("svg")
-}
-@font-face{
-    font-family:"FontAwesome";
-    font-display:block;
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.eot);
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.eot?#iefix) format("embedded-opentype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.woff2) format("woff2"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.woff) format("woff"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.ttf) format("truetype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.svg#fontawesome) format("svg")
-}
-@font-face{
-    font-family:"FontAwesome";
-    font-display:block;
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot);
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot?#iefix) format("embedded-opentype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff2) format("woff2"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff) format("woff"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.ttf) format("truetype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.svg#fontawesome) format("svg");
-    unicode-range:U+f004-f005,U+f007,U+f017,U+f022,U+f024,U+f02e,U+f03e,U+f044,U+f057-f059,U+f06e,U+f070,U+f075,U+f07b-f07c,U+f080,U+f086,U+f089,U+f094,U+f09d,U+f0a0,U+f0a4-f0a7,U+f0c5,U+f0c7-f0c8,U+f0e0,U+f0eb,U+f0f3,U+f0f8,U+f0fe,U+f111,U+f118-f11a,U+f11c,U+f133,U+f144,U+f146,U+f14a,U+f14d-f14e,U+f150-f152,U+f15b-f15c,U+f164-f165,U+f185-f186,U+f191-f192,U+f1ad,U+f1c1-f1c9,U+f1cd,U+f1d8,U+f1e3,U+f1ea,U+f1f6,U+f1f9,U+f20a,U+f247-f249,U+f24d,U+f254-f25b,U+f25d,U+f271-f274,U+f279,U+f28b,U+f28d,U+f2b5-f2b6,U+f2b9,U+f2bb,U+f2bd,U+f2c1-f2c2,U+f2d0,U+f2d2,U+f2dc,U+f2ed,U+f3a5,U+f3d1,U+f410
-}
-@font-face{
-    font-family:"FontAwesome";
-    font-display:block;
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.eot);
-    src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.eot?#iefix) format("embedded-opentype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.woff2) format("woff2"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.woff) format("woff"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.ttf) format("truetype"),
-    url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.svg#fontawesome) format("svg");
-    unicode-range:U+f003,U+f006,U+f014,U+f016,U+f01a-f01b,U+f01d,U+f040,U+f045-f047,U+f05c-f05d,U+f07d-f07e,U+f087-f088,U+f08a-f08b,U+f08e,U+f090,U+f096-f097,U+f0a2,U+f0e4-f0e6,U+f0ec-f0ee,U+f0f5-f0f7,U+f10c,U+f112,U+f114-f115,U+f11d,U+f123,U+f132,U+f145,U+f147-f149,U+f14c,U+f166,U+f16a,U+f172,U+f175-f178,U+f18e,U+f190,U+f196,U+f1b1,U+f1d9,U+f1db,U+f1f7,U+f20c,U+f219,U+f230,U+f24a,U+f250,U+f278,U+f27b,U+f283,U+f28c,U+f28e,U+f29b-f29c,U+f2b7,U+f2ba,U+f2bc,U+f2be,U+f2c0,U+f2c3,U+f2d3-f2d4
-}
-.anclaLogo:hover{
-    animation: shake 1s;
-    animation-iteration-count:infinite;
-}
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg);}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
 }
 @keyframes tilt-n-move-shaking {
     0% {transform: translate(0,0) rotate(0deg)}
@@ -71,40 +12,19 @@ hr{
     75% {transform: translate(-5px,5px) rotate(-5deg)}
     100% {transform: translate(0,0) rotate(0deg)}
 }
-
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
 ::-webkit-scrollbar-track {
     background: rgb(23, 23, 23);
-}
-   
+}  
 ::-webkit-scrollbar-thumb {
     background: #9f3647;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background:#9f3647;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-}
-body{
-    background-color: #181419;
-    color:white; 
-    scrollbar-color: #9f3647  #181419; 
-    scrollbar-width: thin;
-}
+} 
 header{
     background-color:#9f3647;
     color:#ffffff;
-    font:#ffffff; 
-    height: 10vh;
+    height: 80px;
     position:sticky;
     top: 0;
     z-index:10
@@ -116,23 +36,6 @@ header{
     margin-left:40px;
     margin-right: 40px;
     padding: 1.5rem 0;
-}
-.anclaLogo{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.2rem;
-    .anclaLogo::hover{
-        animation: tilt-n-move-shaking 0.25s infinite;
-    }
-}
-.listaNav{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.listaItem{
-    margin-right:20px;
 }
 .linkNav{
     text-decoration: none;
@@ -149,7 +52,7 @@ header{
 }
 .linkNav.iniciarSesion{
     background-color: #181419;
-    color: white;
+    color:#ffffff;
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -158,8 +61,11 @@ header{
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 }
+main{
+    background: rgb(23, 23, 23);
+}
 .sectionPrincipal{
-    color:white;
+    color:#ffffff;
     background-image: url('portada.png');
     background-size: cover;
     background-position: center;
@@ -189,6 +95,7 @@ header{
     font-weight: 700;
     text-decoration: none;
     transition: transform 0.3s, box-shadow 0.3s;
+    width: fit-content;
 }
 .botonRegistrarse:hover {
     background-color: #9f3647;
@@ -198,76 +105,79 @@ header{
 .buscadorPrincipal{
     background-color: #181419;
     color:rgb(255, 255, 255);
-    height: 50vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;      
 }
 .tituloSection{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-top: 40px;
 }
-.buscadorPeliculas{
+#buscadorPeliculas{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    font-size: 1.2rem;
+    height: auto;
 }
-.inputBuscador{
+#inputBuscador{
     border: 2px solid white;
     border-radius: 25px;
-    color: #000000;
-    font-size: 1.2rem;
-    height: 50px;
-    margin: 20px 0px;
-    outline: none;
-    padding: 0px 20px;
-    width: 500px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    text-align: start;
+    color: black;
 }
-.botonBuscador{
+#botonBuscador{
+    border: 2px solid white;
+    border-radius: 25px;
     background-color:#9f3647;
-    display: inline-block;
     color:#ffffff;
-    height: 50px;
-    margin: 20px 10px;
-    padding:0 20px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border: 2px solid white;
+    display: inline-block;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: fit-content;
 }
-.botonBuscador:hover {
+#botonBuscador:hover {
     background-color: #9f3647;
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
-.peliculasTendencia{
-    width:80%;
+hr{
+    border: 1px solid #9f3647;
     margin: 0 auto;
-    display: flex;
-    text-align: center;
-    margin-top: 10px;
 }
-.tituloSection{
+#tendencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #181419;
+}
+.tituloSeccion{
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
+    color: white;
+}
+.tendenciasContainer{
+    justify-content: center;
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	-ms-grid-columns: repeat(3, 1fr);
+	-ms-grid: grid;
+	gap: 40px;
 }
 .peliculas{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:60px;
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
-.pelicula{
+    gap: 60px;
+    font-family: 'Nunito',sans-serif;
     width:200px;
     height: 300px;
     position: relative;
@@ -275,11 +185,9 @@ a{
     border-radius: 10px;
     transition: all 0.5s ease;
 }
-.imgTendencia{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;     
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
 .tituloPelicula{
     z-index: 2;
@@ -290,6 +198,10 @@ a{
     max-width: 20rem;
     width: 100%;
     transform: translateY(-50%) translateX(-50%);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 h4 {
     font-size: 1.6rem;
@@ -302,8 +214,6 @@ h4 {
 .pelicula:hover{
     box-shadow: 0 0 30px #9f3648cd;
     transform: scale(0.9);
-}
-.pelicula:hover:hover .tituloPelicula{
     width: 100%;
     height: 100%;
     backdrop-filter: blur(20px);
@@ -316,31 +226,41 @@ h4 {
     padding: 0.5rem;
     opacity: 1;
 }
-.boton{
+.paginacion {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+.paginacion button {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	font-family: 'Montserrat', sans-serif;
     border: 1px solid white;
     box-sizing: content-box;
-    margin-top:50px;
-    margin-left:20px;
-    background-color:#9f3647;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    background-color: #9f3647;
     color: #ffffff;
     padding: 1rem 1rem;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
-    margin-bottom:60px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.boton:hover {
-    background-color: #9f3647;
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+.paginacion button:hover {
+	background: #137c32;
 }
 .peliculasAclamadas{
     width:80%;
     margin: 0 auto;
-    text-align: center;
-    display: flex;
     margin-top: 10px;
     margin-bottom:60px;
 }
@@ -348,15 +268,14 @@ h4 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
+    color:#ffffff;
 }
 .aclamadas{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px 0px 40px 0px;
+    overflow-x: scroll;
+    overflow-y: none;
+    padding: 0 0 10vh 0;
 }
 .peliculaItem{
     border-radius: 25px;
@@ -376,13 +295,16 @@ h4 {
     object-fit: cover;
 }
 .footer{
+    position: fixed;
+	bottom: 0;
+	width: 100%;
     background-color:#9f3647;
     color:#ffffff;
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 .listaNav{
     list-style: none;
     display: flex;
@@ -403,24 +325,29 @@ h4 {
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
-.flechaArriba{
+.flechaArriba {
     position: fixed;
+    bottom: 20px;
+    right: 20px;
     color: white;
     cursor: pointer;
 }
 
-/*PAGINA REGISTRARSE*/
-.bodyRegistrarse{
+/*PAGINA REGISTRARSE E INICIO DE SESION*/
+.bodyRegistrarse, .bodyIniciarSesion{
     height: 100vh;
     background:linear-gradient(to right top, #24242473,#24242473);
     background-image: url('fondoRegistrarse.jpg');
     background-size: cover;
     background-position: center;
 }
-.headerRegistrarse{
+.headerRegistrarse, .headerInciciarSesion{
     color:#ffffff;
     height: 8vh;
     padding:30px;
+    text-align: start;
+    background-color: transparent;
+
 }
 .anclaLogo{
     text-decoration: none;
@@ -431,9 +358,8 @@ h4 {
 .anclaLogo:hover{
     animation: tilt-n-move-shaking 0.25s infinite;
 }
-.seccionRegistrarse{
+.seccionRegistrarse, .seccionIniciarSesion{
     background-color:rgb(42, 42, 42);
-    width: 30%;
     margin:0 auto;
     border-radius: 5px;
     padding: 40px 20px;
@@ -443,15 +369,17 @@ h4 {
     align-items: center;
     height: 90vh;
     font-size:1.2rem;
+    width: fit-content;
 }
-.tituloRegistrarse{
+.tituloRegistrarse, .tituloIniciar{
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: white;
 }
-form{
-    width: 100%;
+.registroForm, .iniciarForm{
     padding:40px;
+    background-color:#333333;
 }
 input:not(.check,.boton),select{
     width: 100%;
@@ -482,9 +410,9 @@ input:not(.check,.boton),select{
 }
 .textoCheck{
     margin-left: 10px;
+    color: white;
 }
 .boton{
-    width: 87%;
     box-sizing: content-box;
     background-color:#9f3647;
     border: 2px solid #9f3647;
@@ -495,7 +423,7 @@ input:not(.check,.boton),select{
     font-weight: 500;  
 }
 .ayuda{
-    margin-top:40px;
+    margin-top:50px;
     font-size: 1rem;
     text-decoration: none;
     color: #787878;
