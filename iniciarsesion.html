@@ -19,18 +19,15 @@
         </header>
         <main id="main" class="main">
             <section data-aos="zoom-in" data-aos-duration="1000" class="seccionIniciarSesion aos-init aos-animate">
-                <form id="iniciarForm" action="" method="get">
-                    <h2 class="tituloIniciar">Inciar Sesion</h2>
+                <h2 class="tituloIniciar">Inciar Sesion</h2>
+                <form id="isForm" class="iniciarForm" action="" method="get">
                     <div>
-                        <input type="email" placeholder="Email" id="email" name="email">
-                        <div class="error-text">
-                        </div>
+                        <input type="email" placeholder="Email" id="email" name="email" required>
                     </div>
                     <div>
-                        <input type="password" placeholder="Contraseña" id="password" name="password">
-                        <div class="error-text">
-                        </div>
+                        <input type="password" placeholder="Contraseña" id="password" name="password" required>
                     </div>
+                    <p id="error" style="color: white;"></p>
                     <div>
                         <input class="boton" type="submit" value="Iniciar Sesion">
                     </div>
@@ -41,6 +38,6 @@
             </section>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <script src="validacionI.js"></script>
     </body>
 </html>

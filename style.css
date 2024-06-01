@@ -61,7 +61,7 @@ header{
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 }
-main{
+.mainI{
     background: rgb(23, 23, 23);
 }
 .sectionPrincipal{
@@ -110,7 +110,7 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-.tituloSection{
+.tituloSeccion{
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 40px;
@@ -158,7 +158,7 @@ hr{
 .tituloSeccion{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-top: 40px;
     color: white;
 }
 .tendenciasContainer{
@@ -168,9 +168,7 @@ hr{
 	margin: 0 auto 0 auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	-ms-grid-columns: repeat(3, 1fr);
-	-ms-grid: grid;
-	gap: 40px;
+    margin: 5% auto;
 }
 .peliculas{
     display: flex;
@@ -230,7 +228,6 @@ h4 {
 	display: flex;
 	justify-content: center;
 	gap: 20px;
-	padding: 10px;
 }
 .paginacion button {
 	cursor: pointer;
@@ -239,7 +236,7 @@ h4 {
 	justify-content: center;
 	text-align: center;
 	height: 50px;
-	width: 200px;
+	width: fit-content;
 	font-family: 'Montserrat', sans-serif;
     border: 1px solid white;
     box-sizing: content-box;
@@ -256,15 +253,17 @@ h4 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .paginacion button:hover {
-	background: #137c32;
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 .peliculasAclamadas{
-    width:80%;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom:60px;
+    background: rgb(23, 23, 23);
 }
 .tituloSection{
+    background: rgb(23, 23, 23);
+
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
@@ -273,26 +272,26 @@ h4 {
 .aclamadas{
     display: flex;
     justify-content: flex-start;
-    overflow-x: scroll;
-    overflow-y: none;
     padding: 0 0 10vh 0;
+    margin-bottom: 100px;
+    background: rgb(23, 23, 23);
 }
 .peliculaItem{
     border-radius: 25px;
-    width: 170px;
     min-width: 170px;
     font-size: 20px;
     cursor: pointer;
     margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;      
+    overflow-x: scroll; 
+    white-space: nowrap; /* Previene el salto de línea de las imágenes */
 }
 .imgAclamada{
+    margin-bottom: 30px;
     border-radius: 5%;
-    width: 95%;
-    height: 95%;
+    width: 170px;
     object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
 }
 .footer{
     position: fixed;
@@ -300,10 +299,7 @@ h4 {
 	width: 100%;
     background-color:#9f3647;
     color:#ffffff;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 .listaNav{
     list-style: none;
@@ -318,6 +314,7 @@ h4 {
     color:#ffffff;
     font-weight: 700;
     font-size: 1.2rem;
+    text-align: center;
 }
 .administradorPeliculas{
     background-color: #181419;
@@ -331,6 +328,15 @@ h4 {
     right: 20px;
     color: white;
     cursor: pointer;
+    width: 50px;      
+    height: 50px;     
+    display: none;    
+    z-index: 1000;    
+    opacity: 0.7;     
+    background: none;
+}
+.flechaArriba:hover {
+    opacity: 1.0;
 }
 
 /*PAGINA REGISTRARSE E INICIO DE SESION*/
@@ -374,12 +380,12 @@ h4 {
 .tituloRegistrarse, .tituloIniciar{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
     color: white;
 }
 .registroForm, .iniciarForm{
-    padding:40px;
-    background-color:#333333;
+    padding:20px;
 }
 input:not(.check,.boton),select{
     width: 100%;
